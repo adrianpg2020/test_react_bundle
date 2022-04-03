@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24c71f7afed8d6c16a96c61281f312bc",
+    "content-hash": "d0ca23cf551e31c7893ca69cc5e0aa56",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1581,6 +1581,114 @@
             "time": "2021-12-19T18:06:55+00:00"
         },
         {
+            "name": "limenius/react-bundle",
+            "version": "v5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Limenius/ReactBundle.git",
+                "reference": "cad0fbb1ce8b3f6be2371dcf55d3c78f97888c0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Limenius/ReactBundle/zipball/cad0fbb1ce8b3f6be2371dcf55d3c78f97888c0b",
+                "reference": "cad0fbb1ce8b3f6be2371dcf55d3c78f97888c0b",
+                "shasum": ""
+            },
+            "require": {
+                "limenius/react-renderer": "^5.0.0",
+                "php": ">=5.5.0",
+                "symfony/config": "^2.7.0|^3.0.6|^4.0|^5.0|^6.0",
+                "symfony/dependency-injection": "^2.7.0|^3.0.6|^4.0|^5.0|^6.0",
+                "symfony/http-kernel": "^2.7.0|^3.0.6|^4.0|^5.0|^6.0"
+            },
+            "require-dev": {
+                "escapestudios/symfony2-coding-standard": "^2.9",
+                "squizlabs/php_codesniffer": "^2.5",
+                "wimg/php-compatibility": "^7.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Limenius\\ReactBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nacho",
+                    "email": "nacho@limenius.com"
+                }
+            ],
+            "description": "Client and Server-side react rendering in a Symfony Bundle",
+            "keywords": [
+                "isomorphic",
+                "react"
+            ],
+            "support": {
+                "issues": "https://github.com/Limenius/ReactBundle/issues",
+                "source": "https://github.com/Limenius/ReactBundle/tree/v5.1.0"
+            },
+            "time": "2021-12-23T15:39:17+00:00"
+        },
+        {
+            "name": "limenius/react-renderer",
+            "version": "v5.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Limenius/ReactRenderer.git",
+                "reference": "be255b169ed854622b8f2a6305d63ca0482660b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Limenius/ReactRenderer/zipball/be255b169ed854622b8f2a6305d63ca0482660b3",
+                "reference": "be255b169ed854622b8f2a6305d63ca0482660b3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nacmartin/phpexecjs": "^3.0",
+                "php": ">=7.2.0",
+                "twig/twig": "^2.4|^3.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "escapestudios/symfony2-coding-standard": "^3.0",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpstan/phpstan": "^0.11.19"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Limenius\\ReactRenderer\\": "src/Limenius/ReactRenderer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nacho Martin",
+                    "email": "nacho@limenius.com"
+                }
+            ],
+            "description": "Client and Server-side React rendering",
+            "keywords": [
+                "isomorphic",
+                "react",
+                "reactjs",
+                "twig"
+            ],
+            "support": {
+                "issues": "https://github.com/Limenius/ReactRenderer/issues",
+                "source": "https://github.com/Limenius/ReactRenderer/tree/v5.0.4"
+            },
+            "time": "2020-10-20T15:33:57+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.4.0",
             "source": {
@@ -1678,6 +1786,49 @@
                 }
             ],
             "time": "2022-03-14T12:44:37+00:00"
+        },
+        {
+            "name": "nacmartin/phpexecjs",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nacmartin/phpexecjs.git",
+                "reference": "afafdd81ff6f90440a9865b40a9d6cb4ba73aa41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nacmartin/phpexecjs/zipball/afafdd81ff6f90440a9865b40a9d6cb4ba73aa41",
+                "reference": "afafdd81ff6f90440a9865b40a9d6cb4ba73aa41",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/process": "~2.3|~3.0|^4.0|^5.0|^6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Nacmartin\\PhpExecJs": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nacho",
+                    "email": "nacho@limenius.com"
+                }
+            ],
+            "description": "Run JavaScript code from PHP",
+            "support": {
+                "issues": "https://github.com/nacmartin/phpexecjs/issues",
+                "source": "https://github.com/nacmartin/phpexecjs/tree/v3.1.0"
+            },
+            "time": "2021-12-23T10:43:13+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
